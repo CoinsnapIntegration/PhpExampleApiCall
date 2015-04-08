@@ -1,0 +1,9 @@
+{
+    "name": "coinsnapintegration/phpexampleapicall",
+    "type": "project",
+    "description": "Example how to access the coinsnap api via PHP",
+        "require": {
+            "php": ">=5.5.0",
+            "guzzlehttp/guzzle": "5.*"
+       }            
+}
