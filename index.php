@@ -17,7 +17,7 @@ $content = json_encode ( [                          // The content of your reque
 $url = "https://api-demo.coinsnap.eu";              // Please use the base url for your enviroment (LIVE/DEMO)
 
 // Generate a new nonce for every request to minimize the possibility of brute force attacks.
-$nonce = rand ( 1, 999999999 );
+$nonce = mt_rand ();
 
 // Calculate the hash for this request
 $sign = hash_hmac ( 'sha512', $route . hash ( 'sha256', $nonce . $content, false ), $secret, false );
